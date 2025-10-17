@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TravelAds | Brand Profile</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-primary fw-bold" href="index.html">TravelAds</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                    <!-- Dropdown Brand tanpa icon -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="brand.html" id="navbarBrand" role="button">Brand</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarBrand">
+                            <li><a class="dropdown-item" href="brand.html">Brand Profile</a></li>
+                            <li><a class="dropdown-item" href="brand.html#team">Designer Team</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown Product -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="product.html" id="navbarProduct" role="button">Product</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarProduct">
+                            <li><a class="dropdown-item" href="product.html?category=food">Food & Beverage</a></li>
+                            <li><a class="dropdown-item" href="product.html?category=beauty">Health & Beauty</a></li>
+                            <li><a class="dropdown-item" href="product.html?category=usk">USK Store</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero -->
+    <section class="hero-small d-flex align-items-center text-center text-white"
+        style="background: linear-gradient(to right, rgba(0,82,204,0.85), rgba(0,123,255,0.85)), url('https://images.unsplash.com/photo-1604328698692-f76ea9498e76?auto=format&fit=crop&w=1200&q=80') center/cover; height: 45vh;">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-2">Tentang TravelAds</h1>
+            <p class="lead">Kami bantu UMKM tampil profesional dan dikenal lebih luas</p>
+        </div>
+    </section>
+
+    <!-- Tentang Brand -->
+    <section class="about py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <img src="assets/brand/travelads.jpg" class="img-fluid rounded-4 shadow" alt="Tentang Kami">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-3 text-primary">Membangun Identitas UMKM Indonesia</h2>
+                    <p class="text-muted">TravelAds hadir sebagai jembatan antara pelaku UMKM dan dunia digital. Kami
+                        membantu setiap produk memiliki tampilan menarik, identitas kuat, dan promosi yang tepat
+                        sasaran.
+                        Dengan dukungan tim kreatif dan strategi komunikasi yang efektif, TravelAds mendorong
+                        pertumbuhan
+                        ekonomi lokal menuju pasar global.</p>
+                    <ul class="list-unstyled mt-3 text-muted">
+                        <li><i class="bi bi-check-circle-fill text-primary"></i> Branding dan desain produk profesional
+                        </li>
+                        <li><i class="bi bi-check-circle-fill text-primary"></i> Strategi promosi digital yang efektif
+                        </li>
+                        <li><i class="bi bi-check-circle-fill text-primary"></i> Pendampingan langsung bagi pelaku UMKM
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visi Misi -->
+    <section class="vision bg-light py-5">
+        <div class="container text-center">
+            <h2 class="fw-semibold mb-4">Visi & Misi Kami</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <i class="bi bi-eye-fill text-primary fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-2">Visi</h5>
+                        <p class="text-muted">Menjadi platform promosi UMKM terbaik di Indonesia yang mendukung
+                            transformasi
+                            digital dan memperkuat ekonomi kreatif lokal.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <i class="bi bi-bullseye text-primary fs-1 mb-3"></i>
+                        <h5 class="fw-bold mb-2">Misi</h5>
+                        <p class="text-muted">Memberdayakan UMKM melalui strategi branding, desain kreatif, dan jaringan
+                            promosi yang luas sehingga setiap produk dapat dikenal lebih luas di pasar nasional maupun
+                            internasional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tim Desainer -->
+    <section id="team" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-semibold mb-5">Tim Kami</h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="team-card p-4 rounded-4 shadow-sm">
+                        <div class="team-img mb-3 position-relative">
+                            <img src="assets/brand/denov.jpg" class="rounded-circle border border-3 border-primary"
+                                width="150" height="150" alt="Desainer 1">
+                        </div>
+                        <h5 class="fw-bold mb-1 text-dark">Denov Israel Siagian</h5>
+                        <p class="text-bold mb-2">2305102010001</p>
+                        <p class="text-muted small mb-3">Spesialis desain kemasan dan branding visual yang menonjolkan
+                            karakter lokal UMKM.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="team-card p-4 rounded-4 shadow-sm">
+                        <div class="team-img mb-3 position-relative">
+                            <img src="assets/brand/salsabila.jpg" class="rounded-circle border border-3 border-primary"
+                                width="150" height="150" alt="Desainer 2">
+                        </div>
+                        <h5 class="fw-bold mb-1 text-dark">Salsabila Suci Rahmah</h5>
+                        <p class="text-bold mb-2">2305102010009</p>
+                        <p class="text-muted small mb-3">Membantu UMKM menemukan keunikan produknya dan mengomunikasikan
+                            dengan gaya modern.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="team-card p-4 rounded-4 shadow-sm">
+                        <div class="team-img mb-3 position-relative">
+                            <img src="assets/brand/rafly.jpg" class="rounded-circle border border-3 border-primary"
+                                width="150" height="150" alt="Desainer 3">
+                        </div>
+                        <h5 class="fw-bold mb-1 text-dark">Muhammad Rafly Azhari</h5>
+                        <p class="text-bold mb-2">2305102010054</p>
+                        <p class="text-muted small mb-3">Mengawasi konsep kreatif setiap promosi agar sesuai dengan
+                            karakter dan target audiens.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer text-white py-4">
+        <div class="container text-center">
+            <h5 class="fw-bold mb-3">TravelAds</h5>
+            <p class="mb-2">Mendukung pertumbuhan UMKM Indonesia menuju pasar global.</p>
+            <div class="social-icons mb-3">
+                <a href="#" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-twitter"></i></a>
+            </div>
+            <p class="small mb-0">&copy; 2025 TravelAds. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Deteksi perangkat
+            const isMobile = window.matchMedia("(max-width: 991px)").matches;
+
+            if (isMobile) {
+                // Untuk mobile: klik = toggle dropdown
+                document.querySelectorAll(".nav-item.dropdown > a").forEach((dropdownToggle) => {
+                    dropdownToggle.addEventListener("click", function (e) {
+                        e.preventDefault(); // cegah langsung pindah
+                        const menu = this.nextElementSibling;
+
+                        // Tutup dropdown lain
+                        document.querySelectorAll(".dropdown-menu.show").forEach((openMenu) => {
+                            if (openMenu !== menu) openMenu.classList.remove("show");
+                        });
+
+                        menu.classList.toggle("show");
+                    });
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TravelAds | Produk UMKM</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-primary fw-bold" href="index.html">TravelAds</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                    <!-- Dropdown Brand tanpa icon -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="brand.html" id="navbarBrand" role="button">Brand</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarBrand">
+                            <li><a class="dropdown-item" href="brand.html">Brand Profile</a></li>
+                            <li><a class="dropdown-item" href="brand.html#team">Designer Team</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown Product -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="product.html" id="navbarProduct" role="button">Product</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarProduct">
+                            <li><a class="dropdown-item" href="product.html?category=food">Food & Beverage</a></li>
+                            <li><a class="dropdown-item" href="product.html?category=beauty">Health & Beauty</a></li>
+                            <li><a class="dropdown-item" href="product.html?category=usk">USK Store</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Filter Kategori -->
+    <section class="product-filter py-4 bg-light border-bottom">
+        <div class="container text-center">
+            <h2 class="fw-semibold mb-3">Produk UMKM Unggulan</h2>
+            <div class="d-inline-flex gap-3 flex-wrap justify-content-center">
+                <button class="btn btn-outline-primary active" data-category="all">Semua</button>
+                <button class="btn btn-outline-primary" data-category="food">Food & Beverage</button>
+                <button class="btn btn-outline-primary" data-category="beauty">Health & Beauty</button>
+                <button class="btn btn-outline-primary" data-category="usk">USK Store</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daftar Produk -->
+    <section class="product-list py-5">
+        <div class="container">
+            <div class="row g-4" id="productContainer">
+
+                <!-- ===== FOOD CATEGORY ===== -->
+                <div class="col-md-4 product-item" data-category="food">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/product/food1.jpg" class="card-img-top" alt="Keripik Pisang Aceh">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold mb-2">Keripik Pisang Aceh</h5>
+                            <p class="text-muted">Camilan renyah khas Aceh dengan cita rasa autentik.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#productModal1">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product-item" data-category="food">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/product/food2.jpg" class="card-img-top" alt="Sambal Gampong">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold mb-2">Sambal Gampong</h5>
+                            <p class="text-muted">Sambal khas Aceh dengan rasa pedas yang menggugah selera.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#productModal4">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product-item" data-category="food">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/product/food3.jpg" class="card-img-top" alt="Kopi Gayo">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold mb-2">Kopi Gayo</h5>
+                            <p class="text-muted">Kopi arabika premium dengan aroma kuat dan cita rasa khas.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#productModal5">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== BEAUTY CATEGORY ===== -->
+                <div class="col-md-4 product-item" data-category="beauty">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/product/beauty1.jpg" class="card-img-top" alt="Sabun Herbal Serai">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold mb-2">Sabun Herbal Serai</h5>
+                            <p class="text-muted">Sabun alami dengan aroma menyegarkan dan manfaat antiseptik.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#productModal2">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product-item" data-category="beauty">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/product/beauty2.jpg" class="card-img-top" alt="Lulur Kopi Gayo">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold mb-2">Lulur Kopi Gayo</h5>
+                            <p class="text-muted">Perawatan kulit alami dari kopi Gayo, membuat kulit halus dan segar.
+                            </p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#productModal6">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product-item" data-category="beauty">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/product/beauty3.jpg" class="card-img-top" alt="Minyak Zaitun Herbal">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold mb-2">Minyak Zaitun Herbal</h5>
+                            <p class="text-muted">Minyak alami multifungsi untuk kesehatan rambut dan kulit.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#productModal7">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== USK STORE CATEGORY ===== -->
+                <div class="col-md-4 product-item" data-category="usk">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/product/usk1.png" class="card-img-top" alt="Tumbler USK Edition">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold mb-2">Tumbler USK Edition</h5>
+                            <p class="text-muted">Tumbler eksklusif dengan desain elegan dari USK Store.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#productModal3">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product-item" data-category="usk">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/product/usk2.jpg" class="card-img-top" alt="Totebag USK">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold mb-2">Totebag USK</h5>
+                            <p class="text-muted">Tas kanvas ringan dengan logo USK, cocok untuk aktivitas harian.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#productModal8">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product-item" data-category="usk">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/product/usk3.jpg" class="card-img-top" alt="Notebook USK">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold mb-2">Notebook USK</h5>
+                            <p class="text-muted">Buku catatan eksklusif untuk mahasiswa dan alumni USK.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#productModal9">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product-item" data-category="usk">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/product/usk4.jpg" class="card-img-top" alt="Notebook USK">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold mb-2">Nilam Inovac</h5>
+                            <p class="text-muted">UMKM Kosmetik Khas Indonesia yang Produktif dan Inovatif.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#productModal10">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MODAL PRODUK ===== -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="productModal1" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <img src="assets/product/food1.jpg" class="img-fluid rounded mb-3" alt="">
+                <h4>Keripik Pisang Aceh</h4>
+                <p>Camilan khas Aceh dengan cita rasa manis gurih. Diproduksi oleh UMKM lokal dengan bahan berkualitas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="productModal2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <img src="assets/product/beauty1.jpg" class="img-fluid rounded mb-3" alt="">
+                <h4>Sabun Herbal Serai</h4>
+                <p>Terbuat dari bahan alami serai dan minyak kelapa. Membersihkan kulit tanpa membuat kering.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="productModal3" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <img src="assets/product/usk1.png" class="img-fluid rounded mb-3" alt="">
+                <h4>Tumbler USK Edition</h4>
+                <p>Tumbler eksklusif dengan desain USK elegan. Cocok untuk mahasiswa dan alumni.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="productModal4" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <img src="assets/product/food2.jpg" class="img-fluid rounded mb-3" alt="">
+                <h4>Sambal Gampong</h4>
+                <p>Sambal pedas khas Aceh dengan bahan segar dan rasa otentik.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="modal fade" id="productModal5" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <img src="assets/product/food3.jpg" class="img-fluid rounded mb-3" alt="">
+                <h4>Kopi Gayo</h4>
+                <p>Kopi arabika premium dengan aroma kuat dan cita rasa khas Gayo, cocok untuk pecinta kopi sejati.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="modal fade" id="productModal6" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <img src="assets/product/beauty2.jpg" class="img-fluid rounded mb-3" alt="">
+                <h4>Lulur Kopi Gayo</h4>
+                <p>Perawatan kulit alami yang membantu mengangkat sel kulit mati dan memberikan kelembutan alami.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7 -->
+    <div class="modal fade" id="productModal7" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <img src="assets/product/beauty3.jpg" class="img-fluid rounded mb-3" alt="">
+                <h4>Minyak Zaitun Herbal</h4>
+                <p>Minyak serbaguna untuk perawatan rambut dan kulit, dibuat dari zaitun pilihan.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 8 -->
+    <div class="modal fade" id="productModal8" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <img src="assets/product/usk2.jpg" class="img-fluid rounded mb-3" alt="">
+                <h4>Totebag USK</h4>
+                <p>Tas kanvas ringan dengan desain minimalis, ramah lingkungan, dan bergaya.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 9 -->
+    <div class="modal fade" id="productModal9" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <img src="assets/product/usk3.jpg" class="img-fluid rounded mb-3" alt="">
+                <h4>Notebook USK</h4>
+                <p>Buku catatan eksklusif untuk mahasiswa dan alumni USK. Kertas tebal, desain elegan.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal10" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <img src="assets/product/usk4.jpg" class="img-fluid rounded mb-3" alt="">
+                <h4>Nilam Inovac</h4>
+                <p>Inovac merupakan Koperasi Produsen di Aceh yang paling banyak output NIE (Nomor Izin Edar) sehingga sangat mendukung program dari BPOM.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-white py-4">
+        <div class="container text-center">
+            <h5 class="fw-bold mb-3">TravelAds</h5>
+            <p class="mb-2">Mendukung pertumbuhan UMKM Indonesia menuju pasar global.</p>
+            <div class="social-icons mb-3">
+                <a href="#" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-twitter"></i></a>
+            </div>
+            <p class="small mb-0">&copy; 2025 TravelAds. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const filterButtons = document.querySelectorAll('.product-filter button');
+        const productItems = document.querySelectorAll('.product-item');
+
+        function setActiveCategory(category) {
+            filterButtons.forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.category === category);
+            });
+            productItems.forEach(item => {
+                item.style.display = category === 'all' || item.dataset.category === category ? 'block' : 'none';
+            });
+        }
+
+        const params = new URLSearchParams(window.location.search);
+        const categoryParam = params.get('category') || 'all';
+        setActiveCategory(categoryParam);
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                setActiveCategory(btn.dataset.category);
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Deteksi perangkat
+            const isMobile = window.matchMedia("(max-width: 991px)").matches;
+
+            if (isMobile) {
+                // Untuk mobile: klik = toggle dropdown
+                document.querySelectorAll(".nav-item.dropdown > a").forEach((dropdownToggle) => {
+                    dropdownToggle.addEventListener("click", function (e) {
+                        e.preventDefault(); // cegah langsung pindah
+                        const menu = this.nextElementSibling;
+
+                        // Tutup dropdown lain
+                        document.querySelectorAll(".dropdown-menu.show").forEach((openMenu) => {
+                            if (openMenu !== menu) openMenu.classList.remove("show");
+                        });
+
+                        menu.classList.toggle("show");
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

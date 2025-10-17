@@ -1,0 +1,63 @@
+/* Hero Section */
+.product-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+        url('assets/product/hero.jpg') center/cover no-repeat;
+    min-height: 60vh;
+}
+
+/* Tabs */
+.category-tabs .nav-link {
+    color: #004aad;
+    border-radius: 20px;
+    margin: 0 8px;
+    font-weight: 500;
+}
+
+.category-tabs .nav-link.active {
+    background-color: #004aad;
+    color: #fff;
+}
+
+/* Product Grid */
+.product-grid {
+    background: linear-gradient(to bottom, #ffffff, #f8fbff);
+}
+
+.card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    transition: 0.3s ease;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA Section */
+.cta {
+    background: linear-gradient(135deg, #004aad, #0077ff);
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, #004aad, #0077ff);
+}
+
+/* Dropdown hover hanya aktif di desktop */
+@media (min-width: 992px) {
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+/* Hilangkan ikon default Bootstrap pada toggle */
+.navbar .dropdown-toggle::after {
+    display: none;
+}
+
+/* Jarak antar item navbar */
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+}
